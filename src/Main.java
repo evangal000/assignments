@@ -100,6 +100,46 @@ public class Main {
         System.out.println(AssignmentOne.descendingString("1337 H@xor"));
 
 
+        System.out.println("=================Assignment Two=================");
+        System.out.println();
+        System.out.println("\nExercise One: Sort Names:");
+        /*
+        String[] SortedNames = AssignmentTwo.AscendingName();
+        for(String a : SortedNames) {
+            System.out.print(a + " ");
+        }
+
+
+         */
+
+        System.out.println("\nExercise Two: Sequential search");
+        int[] firsttest =  {1 ,5 ,13 ,2 , 33 , 212 , 7 , 77};
+        int[] secondtest = {34 ,23 ,99 ,11 , 212 , 5 , 1};
+        System.out.println("Is 7 in [1 ,5 ,13 ,2 , 33, 212 , 7 , 77]? : " + AssignmentTwo.containsNum(7, firsttest));
+        System.out.println("Is 7 in [34 ,23 ,99 ,11 , 212 , 5 , 1]? : " + AssignmentTwo.containsNum(7 ,  secondtest ));
+
+
+
+        System.out.println("\nExercise Three: Student");
+        Student st1 = new Student("actor", "Evan" , "200 hickory lane", "abc@yahoo.com");
+        st1.getSummary();
+
+
+        System.out.println("\nExercise Four: Employee.");
+        Employee emp1 = new Manager();
+        Employee emp2 = new Manager();
+        System.out.println("This is the ID of the first Employee:\t" + emp1.getId());
+        System.out.println("This is the ID of the second Employee:\t" + emp2.getId());
+
+        System.out.println("\nExercise Five: Circle");
+        Circle test = new Circle(24);
+        System.out.println("Radius:\t" + test.getRadius());
+        System.out.println("Area:\t" + test.getArea());
+
+        System.out.println("\nExercise Six: Implementing abstract class");
+        Employee emp3 = new Manager();
+        System.out.println("Here is the job of the Employee: " + emp3.job());
+
 
 
     }
